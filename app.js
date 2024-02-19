@@ -7,6 +7,8 @@ app.get('/', (request, response) => {
     response.status(200).json({message: "It's working"})
 })
 
-app.listen(PORT, console.log(`Server is running at http://localhost:3500`))
+app.listen(PORT, () => {
+    console.log(`Server is running at http://localhost:3500`)
+})
 
 
